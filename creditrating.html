@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="chartApp" ng-controller="chartCtrl">
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Rating</th>
+                    <th>Amount</th>
+                </tr>
+                <tr ng-repeat="hospital in hospitals">
+                    <td>{{hospital.customer_name}}</td>
+                    <td>{{hospital.customer_address}}</td>
+                    <td>{{hospital.credit_rating}}</td>
+                    <td>{{hospital.amount_receivable}}</td>
+                </tr>
+            </table>
+            <div id="container" style="min-width: 310px; max-width: 800px; height: 400px; margin: 0 auto">                
+            </div>
+            <div>
+                <select ng-model="chartType" ng-change="changeChartType()">
+                    <option value="line">line</option>                    
+                    <option value="bar">bar</option>                    
+                    <option value="pie">pie</option>                    
+                    <option value="column">column</option>
+                </select>
+            </div>
+        </div>
+        <script src="js/myCharts1.js" type="text/javascript"></script>
+        <script>
+                    var app = angular.module('chartApp', []);
+                    app.controller('chartCtrl', function ($http, $scope) {
+                        $scope.x_values = [];
+                        $scope.y_values = [];
+                        $scope.chartType = 'line';
+                        $http.get("data/creditrating.json").then(function (response) {
+                            $scope.hospitals = response.data;
+                            console.log($scope.hospitals);
+                            for (i = 0; i < $scope.hospitals.length; i++)
+                            {
+                                $scope.x_values.push($scope.hospitals[i].customer_name);
+                                $scope.y_values.push($scope.hospitals[i].credit_rating);
+                            }
+                            console.log($scope.x_values);
+                            myCharts($scope.x_values, $scope.y_values, $scope.chartType);
+                        }, function (error) {
+                            alert(error.status);
+                        });
+                        $scope.changeChartType = function () {
+                            myCharts($scope.x_values, $scope.y_values, $scope.chartType);
+                        };
+                    });
+        </script>
+    </body>
+</html>
