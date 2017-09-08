@@ -1,0 +1,62 @@
+[
+    {
+        "customer_name": "Apollo Hospitals",
+        "customer_address": "CMBT,Chennai",
+        "credit_rating": 85,
+        "amount_receivable": 2550000
+    },
+    {
+        "customer_name": "Jeevan Hospitals",
+        "customer_address": "Paranur,Chennai",
+        "credit_rating": 80,
+        "amount_receivable": 1550000
+    },
+    {
+        "customer_name": "NRI Hospitals",
+        "customer_address": "Koyembedu,Chennai",
+        "credit_rating": 75,
+        "amount_receivable": 3550000
+    },
+    {
+        "customer_name": "Seven Hills Hospitals",
+        "customer_address": "Coimbatore,Chennai",
+        "credit_rating": 55,
+        "amount_receivable": 5550000
+    },
+    {
+        "customer_name": "Visakha Eye Hospitals",
+        "customer_address": "CMBT,Chennai",
+        "credit_rating": 65,
+        "amount_receivable": 8050000
+    },
+    {
+        "customer_name": "Tiara Hospitals",
+        "customer_address": "CMBT,Chennai",
+        "credit_rating": 50,
+        "amount_receivable": 9550000
+    },
+    {
+        "customer_name": "St. Mary's Hospitals",
+        "customer_address": "CMBT,Chennai",
+        "credit_rating": 35,
+        "amount_receivable": 6550000
+    },
+    {
+        "customer_name": "St. Joseph's Hospitals",
+        "customer_address": "CMBT,Chennai",
+        "credit_rating": 95,
+        "amount_receivable": 7550000
+    },
+    {
+        "customer_name": "Miara Hospitals",
+        "customer_address": "CMBT,Chennai",
+        "credit_rating": 45,
+        "amount_receivable": 4550000
+    },
+    {
+        "customer_name": "Batra Hospitals",
+        "customer_address": "CMBT,Chennai",
+        "credit_rating": 50,
+        "amount_receivable": 2050000
+    }
+]
