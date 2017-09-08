@@ -6,7 +6,7 @@
 var myCharts = function (xaxis_values, yaxis_values) {
     Highcharts.chart('container', {
         chart: {
-            type: 'bar'
+            type: 'column'
         },
         title: {
             text: 'Hospitals and ratings'
