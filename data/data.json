@@ -25,25 +25,25 @@
     },
     {
         "customer_name": "Visakha Eye Hospitals",
-        "customer_address": "CMBT,Chennai",
+        "customer_address": "Pondicherri,Chennai",
         "credit_rating": 65,
         "amount_receivable": 8050000
     },
     {
         "customer_name": "Tiara Hospitals",
-        "customer_address": "CMBT,Chennai",
+        "customer_address": "Kanyakumari,Chennai",
         "credit_rating": 50,
         "amount_receivable": 9550000
     },
     {
         "customer_name": "St. Mary's Hospitals",
-        "customer_address": "CMBT,Chennai",
+        "customer_address": "Kanchipuram,Chennai",
         "credit_rating": 35,
         "amount_receivable": 6550000
     },
     {
         "customer_name": "St. Joseph's Hospitals",
-        "customer_address": "CMBT,Chennai",
+        "customer_address": "Mahabalipuram,Chennai",
         "credit_rating": 95,
         "amount_receivable": 7550000
     },

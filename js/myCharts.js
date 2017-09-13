@@ -3,24 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var myCharts = function (xaxis_values, yaxis_values) {
+var myCharts = function (xaxis_values, yaxis_values, chart_type, chart_text, yaxis_text, xaxis_text) {
     Highcharts.chart('container', {
         chart: {
-            type: 'column'
+            type: chart_type
         },
         title: {
-            text: 'Hospitals and ratings'
+            text: chart_text
         },
         xAxis: {
             categories: xaxis_values,
             title: {
-                text: null
+                text: xaxis_text
             }
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Credit Rating',
+                text: yaxis_text,
                 align: 'high'
             },
             labels: {
